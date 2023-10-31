@@ -3,12 +3,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidgetComponent from '../CartWidgetComponent/CartWidgetComponent';
+import Image from 'react-bootstrap/Image'; 
 
 const NavBarComponent = () => {
+
+  const logoStyle = {
+    width: '10px', 
+    height: 'auto', 
+  
+  };
+
+
+
   return (
     <Navbar  expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">CUBO indumentaria</Navbar.Brand>
+
+        <Navbar.Brand href="#home">
+
+        <Image src="img/logo.jpg" alt="Logo de CUBO indumentaria" />
+        
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

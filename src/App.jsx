@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <NavBarComponent />
-      <ItemListConteinerComponent greeting="Bienvenidos CUBO indumentaria" />
+      <ItemListConteinerComponent greeting="Bienvenidos a CUBO indumentaria" />
     </div>
   );
 }

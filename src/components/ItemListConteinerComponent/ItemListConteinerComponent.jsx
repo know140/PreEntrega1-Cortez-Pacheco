@@ -7,6 +7,7 @@ const greetingStyle = {
     fontWeight: '700',
     textAlign: 'center',
     color:'white',
+    paddingTop:'20%',
 
 };
 
