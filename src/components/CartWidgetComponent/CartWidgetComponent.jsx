@@ -5,11 +5,11 @@ const CartWidgetComponent = () => {
 
 const iconoStyle={
     color:'red',
-    fontSize: '1.5rem',
+    fontSize: '1.9rem',
     paddingRight: '10px',
 }
 const numeroStyle={
-    fontSize: '1.5rem',
+    fontSize: '1.9rem',
   
 }
 
