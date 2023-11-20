@@ -32,11 +32,15 @@ const NavBarComponent = () => {
             <Nav.Link href="#link" style={navLinkStyle}>
               Pantalones
             </Nav.Link>
+            
+            
             <NavDropdown title="Categorias" style={navLinkStyle} id="basic-nav-dropdown">
+
+
   <NavDropdown.Item>
     <Link to="/category/blanco" style={{ textDecoration: "none", color: "black" }}>
-      Categoria 1
-    </Link>
+  <span>Categoria 1</span>
+</Link>
   </NavDropdown.Item>
 
   <NavDropdown.Item>
@@ -50,7 +54,10 @@ const NavBarComponent = () => {
       Categoria 3
     </Link>
   </NavDropdown.Item>
+  
 </NavDropdown>
+
+
           </Nav>
           <CartWidgetComponent />
         </Navbar.Collapse>

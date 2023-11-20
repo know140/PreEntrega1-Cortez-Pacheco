@@ -1,14 +1,16 @@
 
 
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import ItemListConteinerComponent from '../components/itemListConteinerComponent/itemListConteinerComponent'
 import axios from 'axios';
+import { useParams } from "react-router-dom";
+
 
 
 
 const Category = () => {
     const [products, setProducts] = useState([]);
-
+    const {categoryId} = useParams ();
     useEffect(() => {
       axios
         .get("http://dummyjson.com/products/?limit=10")
@@ -19,6 +21,8 @@ const Category = () => {
           console.error("Error fetching data:", error);
         });
     }, []);
+
+
 
 
 
